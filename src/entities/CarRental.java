@@ -14,11 +14,10 @@ public class CarRental {
 
 	}
 
-	public CarRental(LocalDate start, LocalDate finish, Vehicle vehicle, Invoice invoice) {
+	public CarRental(LocalDate start, LocalDate finish, Vehicle vehicle) {
 		this.start = start;
 		this.finish = finish;
 		this.vehicle = vehicle;
-		this.invoice = invoice;
 	}
 
 	public LocalDate getStart() {
