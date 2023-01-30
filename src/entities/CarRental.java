@@ -1,11 +1,11 @@
 package entities;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class CarRental {
 
-	private LocalDate start;
-	private LocalDate finish;
+	private LocalDateTime start;
+	private LocalDateTime finish;
 
 	private Vehicle vehicle;
 	private Invoice invoice;
@@ -14,25 +14,25 @@ public class CarRental {
 
 	}
 
-	public CarRental(LocalDate start, LocalDate finish, Vehicle vehicle) {
+	public CarRental(LocalDateTime start, LocalDateTime finish, Vehicle vehicle) {
 		this.start = start;
 		this.finish = finish;
 		this.vehicle = vehicle;
 	}
 
-	public LocalDate getStart() {
+	public LocalDateTime getStart() {
 		return start;
 	}
 
-	public void setStart(LocalDate start) {
+	public void setStart(LocalDateTime start) {
 		this.start = start;
 	}
 
-	public LocalDate getFinish() {
+	public LocalDateTime getFinish() {
 		return finish;
 	}
 
-	public void setFinish(LocalDate finish) {
+	public void setFinish(LocalDateTime finish) {
 		this.finish = finish;
 	}
 
